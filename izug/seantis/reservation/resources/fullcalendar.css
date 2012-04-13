@@ -1,1 +1,42 @@
 /* izug.seantis.reservation */
+
+#content .fc-event-head .fc-event-time {
+    line-height: 18px;
+}
+
+#content .fc-event-title {
+    font-size: 10px;   
+}
+
+#content .event-unavailable, 
+#content .event-unavailable .fc-event-skin, 
+#content .event-unavailable .fc-event-head {
+    background-color: #ae1e00 !important;
+    border-color: #ae1e00 !important;
+}
+
+#content .event-available, 
+#content .event-available .fc-event-skin, 
+#content .event-available .fc-event-head {
+    background-color: #0e6700 !important;
+    border-color: #0e6700 !important;
+}
+
+#content .event-partly-available, 
+#content .event-partly-available .fc-event-skin, 
+#content .event-partly-available .fc-event-head {
+    background-color: #ff7909 !important;
+    border-color: #ff7909 !important;
+}
+
+#content .fc-content table * {
+    border-color: #bbb; 
+}
+
+#content .fc-content .fc-sun, #content .fc-content .fc-sat {
+    background-color: #efefef;   
+}
+
+#content .fc-content .fc-today {
+    background-color: #fff0b2;   
+}
