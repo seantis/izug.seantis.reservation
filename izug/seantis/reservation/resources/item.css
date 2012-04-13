@@ -1,1 +1,63 @@
 /* izug.seantis.reservation */
+
+.facilityOverview th {
+    font-size: 10px;   
+}
+
+.directoryDescription {
+    margin-top: 0;   
+    width: 70%;
+}
+
+.directoryDescription p {
+    font-size: 13px;   
+    font-weight: bold;
+}
+
+.directoryResult {
+    border-color: #dedede;   
+}
+
+.directoryInfo h2 {
+    border-color: #bbb;
+    font-size: 13px;
+    font-weight: bold;   
+}
+
+.directoryItem {
+    margin-top: 3.46em;   
+}
+
+.resourceIcon {
+    /* this is probably not the right way of doing it */
+    background-image: url('../zugsprite.png');   
+    background-position: 0 -326px;
+    width: 15px;
+}
+
+.directoryItem .resourceItem {
+    padding: 7px 10px 2px 18px;   
+    border-color: #dedede;
+}
+
+.directoryItem .resourceItem:hover {
+    border-color: #006fba;
+    background-color: white;
+}
+
+.directoryItem .resourceItem div {
+    font-size: 12px;   
+}
+
+.directoryItem .resourceTitle {
+    text-decoration: underline;   
+}
+
+.groupSelection {
+    -webkit-box-shadow: 0 0 0 0 white !important;
+    -moz-box-shadow: 0 0 0 0 white !important;
+    box-shadow: 0 0 0 0 white !important;
+    background-color: white !important;
+    
+    border-color: #006fba !important;
+}

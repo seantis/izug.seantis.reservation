@@ -10,7 +10,8 @@
 }
 
 .directoryResult {
-    border: 0.0919em solid #EFEFEF;
+    border: 0.0919em solid #dedede;
+    border-radius: 0;
 }
 
 .directoryResult:hover {

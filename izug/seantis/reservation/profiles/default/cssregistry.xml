@@ -17,4 +17,6 @@
 
     <stylesheet title="" cacheable="True" compression="safe" cookable="True" enabled="1" id="++resource++izug.seantis.reservation/report.css" insert-after="++resource++seantis.reservation.css/report.css" media="screen" rel="stylesheet" rendering="link"/>
 
+    <stylesheet id="++resource++izug.seantis.reservation/fullcalendar.css" insert-after="++resource++collective.js.fullcalendar/fullcalendar.css" media="all" />
+
 </object>
