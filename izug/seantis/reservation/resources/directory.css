@@ -1,0 +1,40 @@
+/* izug.seantis.reservation */
+
+.directorySearchFormButtons input {
+    margin-top: 1.1em;   
+}
+
+#directoryResultList {
+    border-top: none;
+    margin-top: 3px;   
+}
+
+.directoryResult {
+    border: 0.0919em solid #EFEFEF;
+}
+
+.directoryResult:hover {
+    border-color: #006fba;
+    background-color: white;
+}
+
+.groupSelection {
+    -webkit-box-shadow: 0 0 0 0 white !important;
+    -moz-box-shadow: 0 0 0 0 white !important;
+    box-shadow: 0 0 0 0 white !important;
+    background-color: white !important;
+    
+    border-color: #006fba;
+}
+
+#landingPageImage {
+    margin-right: 7px;
+}
+
+#directoryInfo.facilityInfo {
+    width: 50%;   
+}
+
+.facilityOverview {
+    width: 45%;
+}

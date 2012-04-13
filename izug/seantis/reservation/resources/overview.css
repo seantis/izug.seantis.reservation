@@ -1,0 +1,90 @@
+/* izug.seantis.reservation */
+
+.overview-utils ul {
+    font-size: 1em;
+    margin-top: 10px;   
+}
+
+.overview-utils ul li {
+    background: none;
+    list-style-type: none;
+    background-repeat: no-repeat;
+    padding-left: 0;
+    margin: 0;
+}
+
+#timeframes div.resourceTitle,
+#timeframes a {
+    font-size: 1em;   
+}
+
+.timeframes-control,
+.timeframes-global-control {
+    margin: 0;
+    padding: 0;
+}
+
+.timeframes-global-control:before {
+    margin-left: 0;   
+}
+
+#timeframes .resourceTitle {
+    margin: 0 10px 0 0;
+}
+
+#timeframes .visibleTimeframe {
+    color: black !important;
+}
+
+#timeframes .hiddenTimeframe {
+    color: #76797C !important;
+}
+
+#timeframes .resourceItem {
+   margin: 0 0 10px 0;
+   padding: 0;   
+}
+
+/* temporary solution until ftw-edit-bar works */
+#edit-bar {
+    -moz-border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    border-radius: 0 !important;
+    background-color: &dtml-contentViewBackgroundColor; !important;
+    color: &dtml-contentViewFontColor; !important;
+    text-align: right;
+    text-transform: &dtml-textTransform;;
+    padding: 0 0 1em 1em;
+    z-index: 2;
+    position:relative;
+    height: 1.6em !important;
+    border: &dtml-borderWidth; &dtml-borderStyle; &dtml-contentViewBorderColor; !important;
+    border-style: none none solid none !important;
+    min-height: 1.6em !important;
+}
+#edit-bar ul,
+#edit-bar li {
+    margin: 0;
+    list-style: none;
+    list-style-image: none;
+    font-size:1em !important;
+    text-align: left;
+    line-height: 2.5em;
+    text-indent: 0;
+}
+#edit-bar dl {
+    line-height: 2.5em;
+}
+#edit-bar li {
+    float: right;
+    z-index: 4;
+    border-left: &dtml-borderWidth; &dtml-borderStyle; &dtml-contentViewBorderColor;;
+}
+
+#edit-bar a {
+    text-decoration: none;
+    padding: 0 0.5em;
+    cursor: pointer;
+    border-bottom-style: none !important;
+    color: &dtml-contentViewFontColor; !important;
+}
