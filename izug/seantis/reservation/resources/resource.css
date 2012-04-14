@@ -71,3 +71,59 @@ div.overlay {
     max-width: 900px;
     min-width: 300px;
 }
+
+/* Minitip style */
+
+#miniTip {
+    background-color: white;
+    border-color: #bbb;
+    border-width: 1px;  
+    font-size: 10px;
+    border-radius: 0;
+}
+
+#miniTip a {
+    color: #00538c;
+    font-size: 10px;
+    padding: 5px 5px 5px 10px;
+}
+
+#miniTip a:hover:before {
+    content: none;   
+}
+
+#miniTip a:hover, #miniTip a:visited {
+    background-color: white;
+    margin-left: 10px;
+    padding-left: 0;
+    color: #ae1e00;
+    text-decoration: underline;
+}
+
+#miniTip_c div:first-child {
+    border-top: none;
+}
+
+#miniTip_c div {
+    border-radius: 0;   
+    border: 1px solid #dedede;
+    border-width: 1px 0 1px 0;
+    background-color: #efefef;
+    color: black;
+}
+
+#miniTip .n {
+    border-bottom-color: #00538c;
+}
+
+#miniTip .s {
+    border-bottom-color: #00538c;
+}
+
+#miniTip .e {
+    border-right-color: #00538c;
+}
+
+#miniTip .w {
+    border-left-color: #00538c;
+}
