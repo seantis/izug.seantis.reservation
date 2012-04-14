@@ -1,5 +1,16 @@
 /* izug.seantis.reservation */
 
+.groupSelection {
+    -webkit-box-shadow: 0 0 5px 7px #fff0b2 !important;
+    -moz-box-shadow: 0 0 5px 7px #fff0b2 !important;
+    box-shadow: 0 0 5px 7px #fff0b2 !important;
+    background-color: white !important;
+}   
+
+a.fc-event:hover {
+    text-decoration: none;
+}
+
 #content .fc-event-head .fc-event-time {
     line-height: 18px;
 }
@@ -25,8 +36,15 @@
 #content .event-partly-available, 
 #content .event-partly-available .fc-event-skin, 
 #content .event-partly-available .fc-event-head {
-    background-color: #ff7909 !important;
-    border-color: #ff7909 !important;
+    background-color: #dd7c07 !important;
+    border-color: #dd7c07 !important;
+}
+
+#content .fc-select-helper, 
+#content .fc-select-helper .fc-event-skin, 
+#content .fc-select-helper .fc-event-head {
+    background-color: #0053bc !important;
+    border-color: #0053bc !important;   
 }
 
 #content .fc-content table * {
