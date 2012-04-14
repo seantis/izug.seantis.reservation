@@ -1,1 +1,12 @@
 /* izug.seantis.reservation */
+
+.singlecalendar .legend,
+.multicalendar .legend {
+    padding: 4px;
+    background-color: #ebf4fa;
+    border-color: #dedede;
+}
+
+.singlecalendar .legend div {
+    margin-right: 10px;
+}
