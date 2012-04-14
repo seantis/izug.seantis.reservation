@@ -19,3 +19,37 @@
 .multicalendar .fc {
     margin-top: 10px;   
 }
+
+/* wizard form tabs */
+
+.seantis-reservation-form ul.wizardSteps li.formTab a {
+    margin-left: -10px;
+    padding-top: 0px;
+    background-color: transparent;
+    border: none;
+    -webkit-border-radius: 0;
+       -moz-border-radius: 0;
+            border-radius: 0; 
+    height: 16px;
+}
+
+.seantis-reservation-form ul.wizardSteps li.formTab a {
+    border: 1px solid #ccc;
+    border-width: 1px 0;
+    color: #bbb;
+}
+
+.seantis-reservation-form ul.wizardSteps li.formTab a.selected {
+    font-weight: bold;   
+}
+
+.seantis-reservation-form ul.wizardSteps li.formTab a.selected,
+.seantis-reservation-form ul.wizardSteps li.formTab.visited a{
+    border: 1px solid black;
+    border-width: 1px 0;
+    color: black;
+}
+
+.seantis-reservation-form ul.formTabs li.formTab:after {
+     content: "" !important;  
+}
