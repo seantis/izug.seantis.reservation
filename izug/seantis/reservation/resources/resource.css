@@ -10,3 +10,12 @@
 .singlecalendar .legend div {
     margin-right: 10px;
 }
+
+.multicalendar .multiCalendarContainer {
+    float: none;
+    width: 100%;   
+}
+
+.multicalendar .fc {
+    margin-top: 10px;   
+}
