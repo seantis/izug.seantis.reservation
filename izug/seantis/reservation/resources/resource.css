@@ -53,3 +53,17 @@
 .seantis-reservation-form ul.formTabs li.formTab:after {
      content: "" !important;  
 }
+
+.seantis-reservation-form input {
+     max-width: 250px;   
+}
+
+.seantis-reservation-form fieldset {
+     padding: 5px 10px !important;
+}
+
+div.overlay {
+    width: auto;
+    max-width: 900px;
+    min-width: 300px;
+}
