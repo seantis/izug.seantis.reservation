@@ -1,11 +1,23 @@
 /* izug.seantis.reservation */
 
 .groupSelection {
-    -webkit-box-shadow: 0 0 5px 7px #fff0b2 !important;
-    -moz-box-shadow: 0 0 5px 7px #fff0b2 !important;
-    box-shadow: 0 0 5px 7px #fff0b2 !important;
+    -webkit-box-shadow: 0 0 4px 2px #0e6700 !important;
+    -moz-box-shadow: 0 0 4px 2px #0e6700 !important;
+    box-shadow: 0 0 4px 2px #0e6700 !important;
     background-color: white !important;
-}   
+}
+
+.event-unavailable.groupSelection {
+    -webkit-box-shadow: 0 0 4px 2px #ae1e00 !important;
+    -moz-box-shadow: 0 0 4px 2px #ae1e00 !important;
+    box-shadow: 0 0 4px 2px #ae1e00 !important;
+}
+
+.event-partly-available.groupSelection {
+    -webkit-box-shadow: 0 0 4px 2px #dd7c07 !important;
+    -moz-box-shadow: 0 0 4px 2px #dd7c07 !important;
+    box-shadow: 0 0 4px 2px #dd7c07 !important;
+}
 
 a.fc-event:hover {
     text-decoration: none;
