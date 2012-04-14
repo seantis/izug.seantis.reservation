@@ -127,3 +127,55 @@ div.overlay {
 #miniTip .w {
     border-left-color: #00538c;
 }
+
+/* Reservation List Style */
+
+#content #inline-page {
+    background-color: #efefef;
+    border-color: #bbb;
+}
+
+#content .inline-reservations {
+    border-color: #bbb;   
+}
+
+.reservation-approved .reservation-title,
+.reservation-pending .reservation-title {
+    font-size: 12px;
+    height: 23px;    
+}
+
+.reservation-pending .reservation-title {
+    background-color: #454545;   
+}
+
+.reservation-approved .reservation-title {
+    background-color: #00538c;   
+}
+
+.reservation-data {
+    width: 60%;
+    font-size: 11px;   
+}
+
+.reservation-data span.label {
+    color: #454545;
+}
+
+.reservation {
+    margin-bottom: 20px;   
+}
+
+.reservation-list {
+    padding-bottom: 20px;   
+}
+
+.reservation-approved .reservation-list:hover {
+    background-color: white;
+    border-color: #00538c;   
+}
+
+.reservation-pending .reservation-list:hover {
+    background-color: white;
+    border-color: #454545;   
+}
