@@ -89,3 +89,21 @@
     border-bottom-style: none !important;
     color: &dtml-contentViewFontColor; !important;
 }
+
+#seantis-overview-calendar .event-unavailable, 
+#seantis-overview-calendar .event-unavailable .fc-event-skin, 
+#seantis-overview-calendar .event-unavailable .fc-event-head {
+    background-color: #ae1e00 !important;
+}
+
+#seantis-overview-calendar .event-available, 
+#seantis-overview-calendar .event-available .fc-event-skin, 
+#seantis-overview-calendar .event-available .fc-event-head {
+    background-color: #0e6700 !important;
+}
+
+#seantis-overview-calendar .event-partly-available, 
+#seantis-overview-calendar .event-partly-available .fc-event-skin, 
+#seantis-overview-calendar .event-partly-available .fc-event-head {
+    background-color: #dd7c07 !important;
+}
