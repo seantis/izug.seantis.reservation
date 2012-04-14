@@ -1,1 +1,105 @@
 /* izug.seantis.reservation */
+
+/* days */
+
+div.day h2 {
+   color: black !important; 
+   border-color: #006fba !important;
+   font-size: 15px;
+   padding-bottom: 5px !important;
+}
+
+/* reservations */
+.reservation-header {
+   border-color: #99C5E3 !important;
+   height: 24px !important;
+   border: none !important;
+}
+
+.reservation-header h4 {
+   margin-top: 2px;
+}
+
+.approved .reservation-header {
+   background-color: #00538c !important;   
+}
+
+.pending .reservation-header {
+   background-color: #454545 !important;   
+}
+
+/* timespans */
+
+.approved .timespan div.occupied {
+   background-color: #00538c !important;   
+   border: none !important;
+}
+
+.pending .timespan div.occupied {
+   background-color: #454545 !important;   
+   border: none !important;
+}
+
+/* gradient */
+
+#content .monthly-report .reservation:hover {
+    cursor: pointer;
+    background-color: #dfdfdf !important;
+    background-image: linear-gradient(top, #fff, #efefef);
+    background-image: -o-linear-gradient(top, #fff, #efefef);
+    background-image: -moz-linear-gradient(top, #fff, #efefef);
+    background-image: -webkit-linear-gradient(top, #fff, #efefef);
+    background-image: -ms-linear-gradient(top, #fff, #efefef);
+}
+
+/* timetables */
+
+.monthly-report table {
+   font-family: Verdana, Arial, Helvetica, sans-serif !important;
+}
+
+#content .monthly-report table.timetable {
+   border-color: #dedede !important;
+}
+
+#content .monthly-report table.timetable tr td {
+   border-color: #dedede !important;   
+}
+
+#content .monthly-report tr.empty_row {
+   display: none;
+}
+
+.monthly-report .day .timetable div.occupied {
+    border-radius: 0;   
+    line-height: 16x;
+}
+
+.monthly-report .day .reservation-header table.timetable th {
+    color: black;
+    background-color: white;
+    border-color: #006fba !important;
+    height: 17px
+}
+
+.monthly-report .day table.timetable {
+    border-color: #99C5E3 !important;
+}
+
+.monthly-report .day .reservation-summary table.timetable td {
+    border-left: 1px solid #ccc;
+    border-right: none !important;
+    border-color: #99C5E3 !important;
+    border-left: none;
+}
+
+.monthly-report .day .reservation.show-details table.timetable td {
+    border-bottom: 1px solid #ccc;
+    border-color: #99C5E3 !important;
+}
+
+.monthly-report .day .timetable .empty_row td {
+    height: 0; /* display none is no good as we need the td widths */
+    border-width: 0 1px !important;
+    border-color: #99C5E3 !important;
+}

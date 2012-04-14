@@ -10,11 +10,11 @@
 
     <stylesheet title="" cacheable="True" compression="safe" cookable="True" enabled="1" expression="" id="++resource++izug.seantis.reservation/resource.css" insert-after="++resource++seantis.reservation.css/resource.css" media="screen" rel="stylesheet" rendering="link"/>
 
-    <stylesheet title="" cacheable="True" compression="safe" cookable="True" enabled="1"
-    id="++resource++izug.seantis.reservation/jquery.timetable.css" insert-after="++resource++seantis.reservation.css/jquery.timetable.css" media="screen" rel="stylesheet" rendering="link"/>
-
     <stylesheet title="" cacheable="True" compression="safe" cookable="True" enabled="1" id="++resource++izug.seantis.reservation/report.css" insert-after="++resource++seantis.reservation.css/report.css" media="screen" rel="stylesheet" rendering="link"/>
 
     <stylesheet id="++resource++izug.seantis.reservation/fullcalendar.css" insert-after="++resource++collective.js.fullcalendar/fullcalendar.css" media="all" />
+
+    <stylesheet title="" cacheable="True" compression="safe" cookable="True" enabled="1"
+    id="++resource++izug.seantis.reservation/jquery.timetable.css" insert-after="++resource++seantis.reservation.css/jquery.timetable.css" media="screen" rel="stylesheet" rendering="link"/>
 
 </object>
