@@ -62,6 +62,10 @@
      padding: 5px 10px !important;
 }
 
+div.overlay dl.portalMessage {
+     margin-top: 10px;    
+}
+
 div.overlay {
     width: auto;
     max-width: 900px;
