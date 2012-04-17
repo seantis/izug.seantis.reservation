@@ -34,6 +34,10 @@
    background-color: #efefef;   
 }
 
+.reservation {
+    border-color: #dedede !important;   
+}
+
 .reservation-header table {
    margin-left: 1px !important;   
 }
