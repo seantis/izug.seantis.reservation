@@ -15,17 +15,17 @@
 }
 
 #content .directoryResult:hover {
-    border-color: #006fba;
-    background-color: white;
+    border-color: #bbb;
+    background-color: #efefef;
 }
 
 #content .groupSelection {
     -webkit-box-shadow: 0 0 0 0 white !important;
     -moz-box-shadow: 0 0 0 0 white !important;
     box-shadow: 0 0 0 0 white !important;
-    background-color: white !important;
+    background-color: #efefef !important;
     
-    border-color: #006fba;
+    border-color: #bbb;
 }
 
 #content #landingPageImage {

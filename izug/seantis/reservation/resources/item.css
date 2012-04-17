@@ -35,14 +35,15 @@
     width: 15px;
 }
 
-.directoryItem .resourceItem {
+#content .directoryItem .resourceItem {
     padding: 7px 10px 2px 18px;   
     border-color: #dedede;
+    border-radius: 0;
 }
 
-.directoryItem .resourceItem:hover {
-    border-color: #006fba;
-    background-color: white;
+#content .resourceItem:hover {
+    border-color: #bbb;
+    background-color: #efefef;
 }
 
 .directoryItem .resourceItem div {
@@ -57,7 +58,7 @@
     -webkit-box-shadow: 0 0 0 0 white !important;
     -moz-box-shadow: 0 0 0 0 white !important;
     box-shadow: 0 0 0 0 white !important;
-    background-color: white !important;
+    background-color: #efefef !important;
     
-    border-color: #006fba !important;
+    border-color: #bbb !important;
 }
