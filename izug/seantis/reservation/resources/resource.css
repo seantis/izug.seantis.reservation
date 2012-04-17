@@ -66,11 +66,18 @@ div.overlay dl.portalMessage {
      margin-top: 10px;    
 }
 
+/* the overlay's left offset is calculated by jquery tools and it
+allows no overriding of that calculation (except for preload values),
+which is a pity, because if that was possible we could center the
+variable width overlay within iZug's limited #content width instead
+of the window width */
 div.overlay {
     width: auto;
-    max-width: 900px;
-    min-width: 300px;
+    max-width: 800px;
+    min-width: 800px;
+    left: 70px !important;
 }
+
 
 /* Minitip style */
 
