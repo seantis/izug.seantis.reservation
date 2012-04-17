@@ -1,20 +1,20 @@
 <?xml version="1.0"?>
 <object name="portal_css" meta_type="Stylesheets Registry">
 
-    <stylesheet title="" cacheable="True" compression="safe" cookable="True" enabled="1" expression="python:object.portal_type == 'seantis.dir.base.directory'" id="++resource++izug.seantis.reservation/directory.css" insert-after="++resource++seantis.dir.facility.css/directory.css" media="screen" rel="stylesheet" rendering="import"/>
+    <stylesheet title="" cacheable="True" compression="safe" cookable="True" enabled="1" expression="python:object.portal_type == 'seantis.dir.base.directory'" id="++resource++izug.seantis.reservation/directory.css" insert-after="++resource++seantis.dir.facility.css/directory.css" media="all" rel="stylesheet" rendering="import"/>
 
-    <stylesheet title="" cacheable="True" compression="safe" cookable="True" enabled="1" expression="python:object.portal_type == 'seantis.dir.base.item'" id="++resource++izug.seantis.reservation/item.css" insert-after="++resource++seantis.dir.facility.css/item.css" media="screen" rel="stylesheet" rendering="import"/>
+    <stylesheet title="" cacheable="True" compression="safe" cookable="True" enabled="1" expression="python:object.portal_type == 'seantis.dir.base.item'" id="++resource++izug.seantis.reservation/item.css" insert-after="++resource++seantis.dir.facility.css/item.css" media="all" rel="stylesheet" rendering="import"/>
 
     <stylesheet title="" cacheable="True" compression="safe" cookable="True" enabled="1"
-    id="++resource++izug.seantis.reservation/overview.css" insert-after="++resource++seantis.reservation.css/overview.css" media="screen" rel="stylesheet" rendering="link"/>
+    id="++resource++izug.seantis.reservation/overview.css" insert-after="++resource++seantis.reservation.css/overview.css" media="all" rel="stylesheet" rendering="link"/>
 
-    <stylesheet title="" cacheable="True" compression="safe" cookable="True" enabled="1" expression="" id="++resource++izug.seantis.reservation/resource.css" insert-after="++resource++seantis.reservation.css/resource.css" media="screen" rel="stylesheet" rendering="link"/>
+    <stylesheet title="" cacheable="True" compression="safe" cookable="True" enabled="1" expression="" id="++resource++izug.seantis.reservation/resource.css" insert-after="++resource++seantis.reservation.css/resource.css" media="all" rel="stylesheet" rendering="link"/>
 
-    <stylesheet title="" cacheable="True" compression="safe" cookable="True" enabled="1" id="++resource++izug.seantis.reservation/report.css" insert-after="++resource++seantis.reservation.css/report.css" media="screen" rel="stylesheet" rendering="link"/>
+    <stylesheet title="" cacheable="True" compression="safe" cookable="True" enabled="1" id="++resource++izug.seantis.reservation/report.css" insert-after="++resource++seantis.reservation.css/report.css" media="all" rel="stylesheet" rendering="link"/>
 
     <stylesheet id="++resource++izug.seantis.reservation/fullcalendar.css" insert-after="++resource++collective.js.fullcalendar/fullcalendar.css" media="all" />
 
     <stylesheet title="" cacheable="True" compression="safe" cookable="True" enabled="1"
-    id="++resource++izug.seantis.reservation/jquery.timetable.css" insert-after="++resource++seantis.reservation.css/jquery.timetable.css" media="screen" rel="stylesheet" rendering="link"/>
+    id="++resource++izug.seantis.reservation/jquery.timetable.css" insert-after="++resource++seantis.reservation.css/jquery.timetable.css" media="all" rel="stylesheet" rendering="link"/>
 
 </object>
