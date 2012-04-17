@@ -2,30 +2,63 @@
 
 /* days */
 
-div.day h2 {
-   color: black !important; 
-   border-color: #006fba !important;
-   font-size: 15px;
-   padding-bottom: 5px !important;
+#content div.day h2 {
+    font-size: 16px;
+    color: black;
+    border-color: #006fba;
+    padding-left: 0;
+}
+
+#content div.day h3 {
+    font-size: 14px; 
+    margin-bottom: 15px;  
+}
+
+/* controlbox */
+
+.controlbox {
+    border-color: #bbb;
+    box-shadow: none;   
+}
+
+.controlbox h2 {
+   border-color: #454545;   
 }
 
 /* reservations */
+.day .reservation {
+   margin-bottom: 0;   
+}
+
+.day .reservation.odd {
+   background-color: #efefef;   
+}
+
+.reservation-header table {
+   margin-left: 1px !important;   
+}
+
+.reservation table td {
+   padding-left: 4px !important;   
+}
+
 .reservation-header {
    border-color: #99C5E3 !important;
    height: 24px !important;
    border: none !important;
+   border-bottom: 1px solid #dedede !important;
+   font-size: 12px;
+   background-color: white !important;
 }
 
 .reservation-header h4 {
-   margin-top: 2px;
+   height: 19px !important;
+   color: #00538c !important;
+   font-weight: bold !important;
 }
 
-.approved .reservation-header {
-   background-color: #00538c !important;   
-}
-
-.pending .reservation-header {
-   background-color: #454545 !important;   
+.pending .reservation-header h4 {
+   color: #454545 !important;
 }
 
 /* timespans */
