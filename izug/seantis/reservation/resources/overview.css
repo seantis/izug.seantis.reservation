@@ -46,20 +46,19 @@
    border: none;
 }
 
-/* temporary solution until ftw-edit-bar works */
+/* temporary solution until ftw themes work correctly */
 #edit-bar {
     -moz-border-radius: 0 !important;
     -webkit-border-radius: 0 !important;
     border-radius: 0 !important;
-    background-color: &dtml-contentViewBackgroundColor; !important;
-    color: &dtml-contentViewFontColor; !important;
+    background-color: white !important;
+    color: black !important;
     text-align: right;
-    text-transform: &dtml-textTransform;;
     padding: 0 0 1em 1em;
     z-index: 2;
     position:relative;
     height: 1.6em !important;
-    border: &dtml-borderWidth; &dtml-borderStyle; &dtml-contentViewBorderColor; !important;
+    border: 0px solid black;
     border-style: none none solid none !important;
     min-height: 1.6em !important;
 }
@@ -79,7 +78,7 @@
 #edit-bar li {
     float: right;
     z-index: 4;
-    border-left: &dtml-borderWidth; &dtml-borderStyle; &dtml-contentViewBorderColor;;
+    border-left: 0px solid #006fba;
 }
 
 #edit-bar a {
@@ -87,7 +86,7 @@
     padding: 0 0.5em;
     cursor: pointer;
     border-bottom-style: none !important;
-    color: &dtml-contentViewFontColor; !important;
+    color: #00538c;
 }
 
 #seantis-overview-calendar .event-unavailable, 
