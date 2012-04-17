@@ -66,6 +66,10 @@ div.overlay dl.portalMessage {
      margin-top: 10px;    
 }
 
+.seantis-reservation-form .formTab a.required:after {
+    content: none;
+}
+
 /* the overlay's left offset is calculated by jquery tools and it
 allows no overriding of that calculation (except for preload values),
 which is a pity, because if that was possible we could center the
