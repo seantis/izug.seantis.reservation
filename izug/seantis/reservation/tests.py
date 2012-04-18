@@ -1,9 +1,5 @@
 import unittest
 
-from zope.testing import doctestunit
-from zope.component import testing
-from Testing import ZopeTestCase as ztc
-
 from Products.Five import zcml
 from Products.Five import fiveconfigure
 from Products.PloneTestCase import PloneTestCase as ptc
@@ -25,30 +21,8 @@ class TestCase(ptc.PloneTestCase):
         def tearDown(cls):
             pass
 
-
 def test_suite():
-    return unittest.TestSuite([
-
-        # Unit tests
-        #doctestunit.DocFileSuite(
-        #    'README.txt', package='collective.js.underscore',
-        #    setUp=testing.setUp, tearDown=testing.tearDown),
-
-        #doctestunit.DocTestSuite(
-        #    module='collective.js.underscore.mymodule',
-        #    setUp=testing.setUp, tearDown=testing.tearDown),
-
-
-        # Integration tests that use PloneTestCase
-        #ztc.ZopeDocFileSuite(
-        #    'README.txt', package='collective.js.underscore',
-        #    test_class=TestCase),
-
-        #ztc.FunctionalDocFileSuite(
-        #    'browser.txt', package='collective.js.underscore',
-        #    test_class=TestCase),
-
-        ])
+    return unittest.TestSuite()
 
 if __name__ == '__main__':
     unittest.main(defaultTest='test_suite')
