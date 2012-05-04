@@ -13,21 +13,27 @@
     margin: 0;
 }
 
+#email_templates div.resourceTitle,
+#email_templates a, 
 #timeframes div.resourceTitle,
 #timeframes a {
     font-size: 1em;   
 }
 
+.templates-control,
+.templates-global-control,
 .timeframes-control,
 .timeframes-global-control {
     margin: 0;
     padding: 0;
 }
 
+.templates-global-control:before,
 .timeframes-global-control:before {
     margin-left: 0;   
 }
 
+#email_templates .resourceTitle,
 #timeframes .resourceTitle {
     margin: 0 10px 0 0;
 }
@@ -40,22 +46,11 @@
     color: #76797C !important;
 }
 
+#email_templates .resourceItem, 
 #timeframes .resourceItem {
    margin: 0 0 10px 0;
    padding: 0;   
    border: none;
-}
-
-/* temporary solution until ftw themes work correctly */
-#edit-bar ul {
-   float: right;   
-   margin: 0 0 -10px 0;
-}
-
-#edit-bar ul li {
-   float: right;
-   padding: 0 0 0 10px;
-   list-style: none;   
 }
 
 #seantis-overview-calendar .event-unavailable, 
