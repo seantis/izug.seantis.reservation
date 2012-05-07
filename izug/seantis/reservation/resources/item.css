@@ -5,7 +5,6 @@
 }
 
 .directoryDescription {
-    margin-top: 0;   
     width: 70%;
 }
 
@@ -15,7 +14,8 @@
 }
 
 .directoryResult {
-    border-color: #dedede;   
+    border-color: #dedede;
+    padding: 0 20px 0 20px;   
 }
 
 .directoryInfo h2 {

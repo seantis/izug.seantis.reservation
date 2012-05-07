@@ -3,7 +3,7 @@
 
     <stylesheet title="" cacheable="True" compression="safe" cookable="True" enabled="1" expression="python:object.portal_type == 'seantis.dir.base.directory'" id="++resource++izug.seantis.reservation/directory.css" insert-after="++resource++seantis.dir.facility.css/directory.css" media="all" rel="stylesheet" rendering="import"/>
 
-    <stylesheet title="" cacheable="True" compression="safe" cookable="True" enabled="1" expression="python:object.portal_type == 'seantis.dir.base.item'" id="++resource++izug.seantis.reservation/item.css" insert-after="++resource++seantis.dir.facility.css/item.css" media="all" rel="stylesheet" rendering="import"/>
+    <stylesheet title="" cacheable="True" compression="safe" cookable="True" enabled="1" expression="python:object.portal_type in ('seantis.dir.base.item', 'seantis.reservation.resource')" id="++resource++izug.seantis.reservation/item.css" insert-after="++resource++seantis.dir.facility.css/item.css" media="all" rel="stylesheet" rendering="import"/>
 
     <stylesheet title="" cacheable="True" compression="safe" cookable="True" enabled="1"
     id="++resource++izug.seantis.reservation/overview.css" insert-after="++resource++seantis.reservation.css/overview.css" media="all" rel="stylesheet" rendering="link"/>
