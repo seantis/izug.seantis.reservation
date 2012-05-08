@@ -11,6 +11,10 @@
     margin-right: 10px;
 }
 
+.singlecalendar .legend div.color {
+    padding-right: 0;   
+}
+
 .multicalendar .multiCalendarContainer {
     float: none;
     width: 100%;   
