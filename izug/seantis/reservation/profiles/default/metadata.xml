@@ -1,4 +1,11 @@
 <?xml version="1.0"?>
 <metadata>
-  <version>0.1</version>
+    <version>0.1</version>
+    <dependencies>
+        <dependency>profile-seantis.dir.facility:default</dependency>
+        <dependency>profile-seantis.reservation:default</dependency>
+        <dependency>profile-izug.basetheme:default</dependency>
+        <dependency>profile-izug.basetheme:zug_directories</dependency>
+        <dependency>profile-izug.basetheme:izug4</dependency>
+    </dependencies>
 </metadata>
