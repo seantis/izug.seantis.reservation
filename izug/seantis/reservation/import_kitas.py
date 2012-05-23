@@ -166,6 +166,7 @@ def run_import(app, site_name, folder_path, records):
             lines.append(line)
 
         facility.notes = ''.join(lines)
+        facility.image = None
 
     transaction.commit()
         
