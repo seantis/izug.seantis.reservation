@@ -194,3 +194,8 @@ div.overlay {
     background-color: white;
     border-color: #454545;   
 }
+
+#ftw-edit-bar {
+    position: relative !important;
+    z-index: 1000 !important;
+}
