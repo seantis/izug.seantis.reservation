@@ -10,8 +10,9 @@
 }
 
 #content .directoryResult {
-    border: 0.0919em solid #dedede;
+    border: 0.0919em solid #dedede !important;
     border-radius: 0;
+    padding: 10px 5px 15px 12px !important;
 }
 
 #content .directoryResult:hover {
@@ -38,8 +39,4 @@
 
 #content .facilityOverview {
     width: 45%;
-}
-
-.seantis-directory-filter {
-    width: 100% !important;
 }
