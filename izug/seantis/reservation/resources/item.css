@@ -16,6 +16,7 @@
 .directoryResult {
     border-color: #dedede;
     padding: 0 20px 0 20px;   
+    position: relative;
 }
 
 .directoryInfo h2 {
@@ -61,4 +62,22 @@
     background-color: #efefef !important;
     
     border-color: #bbb !important;
+}
+
+#directoryResultMap {
+   float: none;   
+   width: 100%;
+   padding-top: 15px;
+   height: 300px;
+}
+
+#directoryResultMap #default-cgmap {
+    height: 300px;
+}
+
+#content div.directoryMarker {
+    position: absolute;
+    top: 5px;
+    right: -2px;
+    left: auto;     
 }
