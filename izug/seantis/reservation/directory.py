@@ -1,6 +1,6 @@
 from five import grok
 
-from seantis.dir.base.directory import IDirectory
+from seantis.dir.base.interfaces import IDirectory
 from seantis.dir.base.directory import DirectoryViewletManager
 
 class ExtendedDirectoryViewlet(grok.Viewlet):
