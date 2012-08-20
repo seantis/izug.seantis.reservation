@@ -59,3 +59,12 @@
     right: -2px;
     left: auto;     
 }
+
+#content #landingPageText {
+    padding-left: 7px;
+    padding-right: 15px;
+}
+
+#content #landingPageText #landingPageImage {
+    padding-right: 8px;
+}
