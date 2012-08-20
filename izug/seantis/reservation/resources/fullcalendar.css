@@ -31,6 +31,7 @@ a.fc-event:hover {
     font-size: 10px;   
 }
 
+.limitedList .event-unavailable,
 #content .event-unavailable, 
 #content .event-unavailable .fc-event-skin, 
 #content .event-unavailable .fc-event-head {
@@ -38,6 +39,7 @@ a.fc-event:hover {
     border-color: #ae1e00 !important;
 }
 
+.limitedList .event-available,
 #content .event-available, 
 #content .event-available .fc-event-skin, 
 #content .event-available .fc-event-head {
@@ -45,6 +47,7 @@ a.fc-event:hover {
     border-color: #0e6700 !important;
 }
 
+.limitedList .event-partly-available,
 #content .event-partly-available, 
 #content .event-partly-available .fc-event-skin, 
 #content .event-partly-available .fc-event-head {
