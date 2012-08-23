@@ -70,19 +70,3 @@
 #seantis-overview-calendar .event-partly-available .fc-event-head {
     background-color: #dd7c07 !important;
 }
-
-.portaltype-seantis-dir-facility-item #seantis-overview-calendar {
-    margin-bottom: -10px;
-}
-
-.portaltype-seantis-dir-facility-item #directoryResultMap {
-    padding-top: 33px;   
-}
-
-.portaltype-seantis-dir-facility-directory #directoryResultMap {
-    padding-top: 0;
-}
-
-.portaltype-seantis-dir-facility-directory #seantis-overview-calendar {
-    padding-bottom: 20px;
-}

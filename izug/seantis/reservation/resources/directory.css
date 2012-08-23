@@ -40,12 +40,12 @@
 
 #content .facilityOverview {
     width: 45%;
+    margin-top: 10px;
 }
 
 #directoryResultMap {
    float: none;   
    width: 100%;
-   padding-top: 15px;
    height: 300px;
 }
 

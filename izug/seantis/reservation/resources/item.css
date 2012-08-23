@@ -25,10 +25,6 @@
     font-weight: bold;   
 }
 
-.directoryItem {
-    margin-top: 3.46em;   
-}
-
 .resourceIcon {
     /* this is probably not the right way of doing it */
     background-image: url('../zugsprite.png');   
@@ -67,7 +63,6 @@
 #directoryResultMap {
    float: none;   
    width: 100%;
-   padding-top: 15px;
    height: 300px;
 }
 
