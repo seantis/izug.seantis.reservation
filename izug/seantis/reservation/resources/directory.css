@@ -1,5 +1,13 @@
 /* izug.seantis.reservation */
 
+.resourceItem {
+    border-width: 1px;   
+}
+
+.directoryResult:hover {
+    box-shadow: none !important;
+}
+
 #content .directorySearchFormButtons input {
     margin-top: 1.1em;   
 }
@@ -56,7 +64,7 @@
 #content div.directoryMarker {
     position: absolute;
     top: 5px;
-    right: -2px;
+    right: 2px;
     left: auto;     
 }
 

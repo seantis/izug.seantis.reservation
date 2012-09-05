@@ -1,5 +1,12 @@
 /* izug.seantis.reservation */
 
+.resourceItem {
+    border-width: 1px;   
+}
+
+.resourceItem:hover {
+    box-shadow: none !important;
+}
 .facilityOverview th {
     font-size: 10px;   
 }
@@ -15,6 +22,7 @@
 
 .directoryResult {
     border-color: #dedede;
+    border-width: 1px;
     padding: 0 20px 0 20px;   
     position: relative;
 }
