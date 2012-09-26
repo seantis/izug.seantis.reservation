@@ -8,10 +8,6 @@
     box-shadow: none !important;
 }
 
-#content .directorySearchFormButtons input {
-    margin-top: 1.1em;   
-}
-
 #content #directoryResultList {
     border-top: none;
     margin-top: 3px;   
