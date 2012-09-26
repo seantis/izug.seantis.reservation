@@ -29,6 +29,10 @@
     background-color: #efefef;
 }
 
+#content #directoryInfo #directoryResultList .directoryResult:hover h2 {
+    color: #AE1E00 !important;
+}
+
 #content .groupSelection {
     -webkit-box-shadow: 0 0 0 0 white !important;
     -moz-box-shadow: 0 0 0 0 white !important;
@@ -71,8 +75,12 @@
 #content #landingPageText {
     padding-left: 7px;
     padding-right: 15px;
+    width: 70%;
+    margin-bottom: 9px;
 }
 
 #content #landingPageText #landingPageImage {
-    padding-right: 8px;
+    float: left;
+    margin-left: -5px;
+    margin-top: 4px;
 }
