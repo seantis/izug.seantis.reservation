@@ -26,4 +26,11 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
+  <!-- Run custom setup code -->
+  <genericsetup:importStep
+      name="izug.seantis.reservation"
+      title="custom setup code for izug.seantis.reservation"
+      description=""
+      handler="izug.seantis.reservation.setuphandler.custom_setup" />
+
 </configure>

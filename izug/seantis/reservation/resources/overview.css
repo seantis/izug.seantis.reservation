@@ -1,5 +1,11 @@
 /* izug.seantis.reservation */
 
+body.icons-on #content *[class*="contenttype-"],
+body.icons-on #content *[class*="actionicon-"] {
+    background-image:none;
+    padding: 0.090909091em 0 0.090909091em 0 !important;
+}
+
 #directorySearch {
     border: none;
     margin: 0;   

@@ -4,8 +4,15 @@
     <dependencies>
         <dependency>profile-seantis.dir.facility:default</dependency>
         <dependency>profile-seantis.reservation:default</dependency>
+        <dependency>profile-ftw.contentmenu:default</dependency>
         <dependency>profile-izug.basetheme:default</dependency>
         <dependency>profile-izug.basetheme:zug_directories</dependency>
-        <dependency>profile-izug.basetheme:izug4</dependency>
+        <dependency>profile-collective.geo.contentlocations:default</dependency>
+        <dependency>profile-collective.geo.geographer:default</dependency>
+        <dependency>profile-collective.geo.kml:default</dependency>
+        <dependency>profile-collective.geo.mapwidget:default</dependency>
+        <dependency>profile-collective.geo.openlayers:default</dependency>
+        <dependency>profile-collective.geo.settings:default</dependency>
+        <dependency>profile-collective.geo.zugmap:default</dependency>
     </dependencies>
 </metadata>
