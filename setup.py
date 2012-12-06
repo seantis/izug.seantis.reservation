@@ -25,7 +25,8 @@ setup(name='izug.seantis.reservation',
       install_requires=[
           'setuptools',
           'seantis.reservation',
-          'izug.basetheme'
+          'izug.basetheme',
+          'collective.geo.zugmap'
           # -*- Extra requirements: -*-
       ],
       entry_points="""
