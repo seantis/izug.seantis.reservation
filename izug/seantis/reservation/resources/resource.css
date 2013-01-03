@@ -206,3 +206,29 @@ label .required {
     background-repeat: no-repeat;
     padding-right: 3px;
 }
+
+/* My Reservations */
+.my-reservations {
+    padding: 0 20px 20px 20px;
+    border: 1px solid #ddd;
+}
+
+.my-reservations h2 {
+    border-bottom: 2px solid #006fba;
+    padding-bottom: 10px;
+}
+
+.my-reservations ul li {
+    border-bottom: 1px solid #99C5E3;   
+    padding-bottom: 8px;
+}
+
+
+.my-reservations ul {
+    list-style: none;
+    margin-left: 0; 
+}
+
+.my-reservations .formControls {
+    margin-left: -2px;   
+}
