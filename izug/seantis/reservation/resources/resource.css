@@ -20,8 +20,8 @@
     width: 100%;   
 }
 
-.multicalendar .fc {
-    margin-top: 10px;   
+.singlecalendar .fc, .multicalendar .fc {
+    margin-top: 20px;   
 }
 
 /* wizard form tabs */
