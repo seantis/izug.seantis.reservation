@@ -210,8 +210,9 @@ label .required {
 /* Your reservations */
 .your-reservations {
     padding: 0 10px 10px 10px;
-   border: 1px solid #ddd;
+    border: 1px solid #ddd;
     margin-top: 10px;
+    background-color: #ebf4fb;
 }
 
 .your-reservations h2 {
