@@ -210,7 +210,7 @@ label .required {
 /* My Reservations */
 .my-reservations {
     padding: 0 10px 10px 10px;
-    border: 1px solid #ddd;
+   border: 1px solid #ddd;
     margin-top: 10px;
 
 }
@@ -221,9 +221,15 @@ label .required {
     margin-top: 10px;
 }
 
+.my-reservations-view ul li,
 .my-reservations ul li {
     border-bottom: 1px solid #99C5E3;   
     padding-bottom: 8px;
+}
+
+.my-reservations-view ul li {
+    margin-top: -5px;
+    padding-left: 15px;
 }
 
 .my-reservations-view ul,
