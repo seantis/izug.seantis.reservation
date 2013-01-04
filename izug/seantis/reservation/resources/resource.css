@@ -207,60 +207,60 @@ label .required {
     padding-right: 3px;
 }
 
-/* My Reservations */
-.my-reservations {
+/* Your reservations */
+.your-reservations {
     padding: 0 10px 10px 10px;
    border: 1px solid #ddd;
     margin-top: 10px;
 
 }
 
-.my-reservations h2 {
+.your-reservations h2 {
     border-bottom: 2px solid #006fba;
     padding-bottom: 10px;
     margin-top: 10px;
 }
 
-.my-reservations-view ul li,
-.my-reservations ul li {
+.your-reservations-view ul li,
+.your-reservations ul li {
     border-bottom: 1px solid #99C5E3;   
     padding-bottom: 8px;
 }
 
-.my-reservations-view ul li {
+.your-reservations-view ul li {
     margin-top: -5px;
     padding-left: 15px;
 }
 
-.my-reservations-view ul,
-.my-reservations ul {
+.your-reservations-view ul,
+.your-reservations ul {
     list-style: none;
     margin-left: 0; 
 }
 
-.my-reservations-view .formControls,
-.my-reservations .formControls {
+.your-reservations-view .formControls,
+.your-reservations .formControls {
     margin-left: -2px;   
 }
 
-.my-reservations ul span {
+.your-reservations ul span {
     display: block;
     margin-top: 2px;
 }
 
-.my-reservations ul a {
+.your-reservations ul a {
     color: black !important;
 }
 
-.my-reservations ul a:hover {
+.your-reservations ul a:hover {
     text-decoration: underline !important;   
 }
 
-.facilityOverview .my-reservations {
+.facilityOverview .your-reservations {
     margin-top: -2px;
     margin-bottom: 10px;  
 }
 
-.portaltype-seantis-dir-facility-item .facilityOverview .my-reservations {
+.portaltype-seantis-dir-facility-item .facilityOverview .your-reservations {
     margin-top: 5px;
 }
