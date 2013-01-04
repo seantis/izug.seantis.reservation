@@ -212,7 +212,6 @@ label .required {
     padding: 0 10px 10px 10px;
    border: 1px solid #ddd;
     margin-top: 10px;
-
 }
 
 .your-reservations h2 {
@@ -227,9 +226,12 @@ label .required {
     padding-bottom: 8px;
 }
 
+.your-reservations-view ul {
+    margin-top: -7px   
+}
 .your-reservations-view ul li {
-    margin-top: -5px;
-    padding-left: 15px;
+    margin: 0;
+    padding: 2px 0 4px 15px;
 }
 
 .your-reservations-view ul,
@@ -250,6 +252,11 @@ label .required {
 
 .your-reservations ul a {
     color: black !important;
+}
+
+.your-reservations ul a.remove-url {
+    float: right;
+    color: #ad1d0a !important;
 }
 
 .your-reservations ul a:hover {
