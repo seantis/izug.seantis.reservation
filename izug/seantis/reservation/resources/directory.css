@@ -1,5 +1,13 @@
 /* izug.seantis.reservation */
 
+.directoryImage {
+    margin: 0 10px 10px 0;   
+}
+
+.directoryDescription p {
+    padding-left: 0 !important;   
+}
+
 .resourceItem {
     border-width: 1px;   
 }

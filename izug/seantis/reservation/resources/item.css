@@ -1,7 +1,7 @@
 /* izug.seantis.reservation */
 
 .directoryImage {
-    margin: 10px 10px 10px -10px;
+    margin: 10px 10px 10px 0;
 }
 
 .resourceItem {
@@ -17,17 +17,19 @@
 
 .directoryDescription {
     width: 70%;
+    margin-top: 8px;
 }
 
 .directoryDescription p {
-    font-size: 13px;   
+    font-size: 12px;   
     font-weight: bold;
+    margin-top: 0;
 }
 
 .directoryResult {
     border-color: #dedede;
     border-width: 1px;
-    padding: 0 20px 0 20px;   
+    padding: 0 20px 0 10px;   
     position: relative;
     margin-top: 10px;
     min-height: 55px;
@@ -35,7 +37,7 @@
 
 .directoryInfo h2 {
     border-color: #bbb;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: bold;   
 }
 
