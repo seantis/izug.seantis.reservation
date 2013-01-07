@@ -70,6 +70,10 @@ body.icons-on #content *[class*="actionicon-"] {
    border: none;
 }
 
+.portaltype-seantis-dir-facility-item #seantis-overview-calendar {
+   margin-top: 5px !important;   
+}
+
 #seantis-overview-calendar .event-unavailable, 
 #seantis-overview-calendar .event-unavailable .fc-event-skin, 
 #seantis-overview-calendar .event-unavailable .fc-event-head {
