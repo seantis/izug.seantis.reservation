@@ -280,3 +280,12 @@ label .required {
     margin-top: -26px;
     margin-bottom: 11px;
 }
+
+/* form help */
+.seantis-reservation-form .formHelp {
+    display: block;
+    font-weight: normal;
+    margin: 3px 0 4px 0;
+    width: 253px;
+    text-align: justify;
+}
