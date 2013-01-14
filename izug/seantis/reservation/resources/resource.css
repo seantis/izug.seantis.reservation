@@ -282,10 +282,13 @@ label .required {
 }
 
 /* form help */
+.formHelp {
+   font-weight: normal;
+   display: block;
+   margin: 7px 0 10px 0;
+   color: #454545;
+}
 .seantis-reservation-form .formHelp {
-    display: block;
-    font-weight: normal;
-    margin: 3px 0 4px 0;
     width: 253px;
     text-align: justify;
 }
