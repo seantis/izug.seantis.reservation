@@ -307,5 +307,8 @@ label .required {
 
 .your-reservation-quota {
     display: block !important;
-    font-weight: bold;
+}
+
+.your-reservation-quota b {
+    font-weight: normal;
 }
