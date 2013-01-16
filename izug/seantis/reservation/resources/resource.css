@@ -229,7 +229,8 @@ label .required {
 }
 
 .your-reservations-view ul {
-    margin-top: -7px
+    margin-top: -10px;
+    background-color: #ebf4fb;   
 }
 .your-reservations-view ul li {
     margin: 0;
@@ -304,6 +305,7 @@ label .required {
     padding: 0 0 0 20px;
 }
 
-
-
-
+.your-reservation-quota {
+    display: block !important;
+    font-weight: bold;
+}
