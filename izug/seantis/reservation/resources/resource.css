@@ -282,11 +282,41 @@ label .required {
     margin-bottom: 11px;
 }
 
+/* form fixes */
+.seantis-reservation-form #formfield-form-widgets-id,
+.seantis-reservation-form #formfield-form-widgets-group,
+.seantis-reservation-form #formfield-form-widgets-timeframes {
+   display: none;   
+}
+
+#form-widgets-description {
+   width: 932px;   
+}
+#form-widgets-first_hour,
+#form-widgets-last_hour {
+   width: 936px;   
+}
+
+input[disabled] {
+   background-color: #efefef;
+   color: #454545;
+   border-color: #bbb;   
+}
+
 /* form help */
+.field {
+    padding-top: 5px;
+}
+.wizard .field {
+    padding: 0;
+}
 .formHelp {
    font-weight: normal;
    display: block;
-   margin: 7px 0 10px 0;
+   margin: 0 0 4px 0 !important;
+   line-height: 12px;
+   font-size: 10px;
+   
    color: #454545;
 }
 .seantis-reservation-form .formHelp {
