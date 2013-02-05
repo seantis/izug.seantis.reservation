@@ -297,12 +297,6 @@ label .required {
    width: 936px;   
 }
 
-input[disabled] {
-   background-color: #efefef;
-   color: #454545;
-   border-color: #bbb;   
-}
-
 /* form help */
 .field {
     padding-top: 5px;
