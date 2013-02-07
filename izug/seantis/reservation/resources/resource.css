@@ -81,11 +81,10 @@ variable width overlay within iZug's limited #content width instead
 of the window width */
 div.overlay {
     width: auto;
-    max-width: 800px;
-    min-width: 800px;
+    max-width: 880px;
+    min-width: 880px;
     left: 70px !important;
 }
-
 
 /* Minitip style */
 
