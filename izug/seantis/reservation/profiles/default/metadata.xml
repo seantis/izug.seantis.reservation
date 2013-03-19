@@ -4,6 +4,7 @@
     <dependencies>
         <dependency>profile-seantis.dir.facility:default</dependency>
         <dependency>profile-seantis.reservation:default</dependency>
+        <dependency>profile-seantis.reservation:izug_basetheme</dependency>
         <dependency>profile-ftw.contentmenu:default</dependency>
         <dependency>profile-izug.basetheme:default</dependency>
         <dependency>profile-izug.basetheme:zug_directories</dependency>
