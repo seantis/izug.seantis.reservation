@@ -13,11 +13,6 @@
   <!-- Grok the package to initialise schema interfaces and content classes -->
   <grok:grok package="." />
 
-  <browser:resourceDirectory
-      name="izug.seantis.reservation"
-      directory="resources"
-      />
-
   <genericsetup:registerProfile
       name="default"
       title="izug.seantis.reservation"
@@ -29,8 +24,18 @@
   <!-- Run custom setup code -->
   <genericsetup:importStep
       name="izug.seantis.reservation"
-      title="custom setup code for izug.seantis.reservation"
+      title="Installs a seantis.reservation environment for various institutions in the Canton of Zug."
       description=""
       handler="izug.seantis.reservation.setuphandler.custom_setup" />
+
+  <!-- Upgrades -->
+  <genericsetup:upgradeStep
+      title="Upgrades to the reorganized profile structure of seantis.reservation and seantis.dir.facility"
+      description=""
+      source="*"
+      destination="0.2"
+      handler=".upgrades.upgrade_to_10"
+      profile="izug.seantis.reservation:default">
+  </genericsetup:upgradeStep>
 
 </configure>
