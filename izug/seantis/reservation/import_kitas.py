@@ -6,7 +6,7 @@ from string import Template
 from AccessControl.SecurityManagement import newSecurityManager
 from plone.dexterity.utils import createContentInContainer
 from Testing.makerequest import makerequest
-from zope.app.component.hooks import setSite
+from zope.component.hooks import setSite
 
 def number_cell(cell):
     if cell.ctype in (xlrd.XL_CELL_EMPTY, xlrd.XL_CELL_BLANK):
