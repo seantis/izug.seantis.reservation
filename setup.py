@@ -1,18 +1,20 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.1'
+version = '0.2'
 
 setup(name='izug.seantis.reservation',
       version=version,
       description="iZug theme adjustments for seantis.reservation",
-      long_description=open("README.md").read() + "\n" +
-                       open(os.path.join("docs", "HISTORY.txt")).read(),
+      long_description='\n'.join((
+          open("README.md").read(),
+          open(os.path.join("docs", "HISTORY.txt")).read()
+      )),
       # Get more strings from
       # http://pypi.python.org/pypi?:action=list_classifiers
       classifiers=[
-        "Programming Language :: Python",
-        ],
+          'Programming Language :: Python',
+      ],
       keywords='',
       author='',
       author_email='',
@@ -23,6 +25,7 @@ setup(name='izug.seantis.reservation',
       include_package_data=True,
       zip_safe=False,
       install_requires=[
+          'Plone>=4.1'
           'setuptools',
           'seantis.reservation',
           'izug.basetheme',

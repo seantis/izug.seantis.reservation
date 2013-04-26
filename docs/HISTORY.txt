@@ -1,7 +1,11 @@
 Changelog
 =========
 
-1.0dev (unreleased)
--------------------
+0.2
+---
+- Requires Plone 4.1+
+
+0.1
+---
 
 - Initial release
