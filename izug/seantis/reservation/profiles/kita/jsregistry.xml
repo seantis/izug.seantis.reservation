@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<object name="portal_javascripts" meta_type="JavaScripts Registry">
+    <javascript id="++resource++izug.seantis.reservationg.js/form.js"
+        enabled="True" expression="python:'seantis.dir' in object.portal_type"
+        insert-after="jquery.js"
+    />
+</object>

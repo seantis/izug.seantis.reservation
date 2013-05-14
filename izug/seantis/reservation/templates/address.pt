@@ -1,0 +1,16 @@
+<div xmlns:tal="http://xml.zope.org/namespaces/tal"
+     xmlns:i18n="http://xml.zope.org/namespaces/i18n" 
+     i18n:domain="seantis.dir.kitazug">
+    
+    <div class="kitazug-address">
+        <h2 i18n:translate="">Address</h2>
+        <div tal:content="viewlet/data/address"></div>
+        <div>
+            <span tal:content="viewlet/data/zipcode"></span>
+            <span tal:content="viewlet/data/location"></span>
+        </div>
+        <div tal:content="python: ' / '.join([i for i in (viewlet.data['phone'], viewlet.data['fax']) if i])"></div>
+        <a tal:attributes="href string: mailto:${viewlet/data/email}" tal:content="viewlet/data/email"></a>
+        <a tal:attributes="href viewlet/data/homepage" tal:content="viewlet/data/homepage"></a>
+    </div>
+</div>

@@ -1,0 +1,5 @@
+<layers>
+    <layer name="izug.seantis.reservation.kita.layer"
+         interface="izug.seantis.reservation.kita.IKitaSpecific"
+    />
+</layers>

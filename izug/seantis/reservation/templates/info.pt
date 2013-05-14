@@ -1,0 +1,28 @@
+<div xmlns:tal="http://xml.zope.org/namespaces/tal"
+     xmlns:i18n="http://xml.zope.org/namespaces/i18n" 
+     i18n:domain="seantis.dir.kitazug">
+    
+    <div class="kitazug-info">
+        <h2 i18n:translate="">Info</h2>
+        <dl>
+            <tal:block condition="viewlet/data/age">
+                <dt i18n:translate="">Age</dt>
+                <dd>
+                    <div tal:content="viewlet/data/age"></div>
+                </dd>
+            </tal:block>
+            <tal:block condition="viewlet/data/spots">
+                <dt i18n:translate="">Spots</dt>
+                <dd>
+                    <div tal:content="viewlet/data/spots"></div>
+                </dd>
+            </tal:block>
+            <tal:block condition="viewlet/data/holidays">
+                <dt i18n:translate="">Holidays</dt>
+                <dd>
+                    <div tal:content="viewlet/data/holidays"></div>
+                </dd>
+            </tal:block>
+        </dl>
+    </div>
+</div>

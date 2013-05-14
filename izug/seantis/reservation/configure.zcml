@@ -13,11 +13,20 @@
   <!-- Grok the package to initialise schema interfaces and content classes -->
   <grok:grok package="." />
 
+  <!-- Profiles -->
   <genericsetup:registerProfile
       name="default"
       title="izug.seantis.reservation"
       directory="profiles/default"
-      description="iZug theme adjustments for seantis.reservation"
+      description="iZug adjustments for seantis.reservation"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <genericsetup:registerProfile
+      name="kita"
+      title="izug.seantis.reservation"
+      directory="profiles/kita"
+      description="Kita Zug adjustments for seantis.reservation"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
@@ -37,5 +46,15 @@
       handler=".upgrades.upgrade_to_10"
       profile="izug.seantis.reservation:default">
   </genericsetup:upgradeStep>
+
+  <!-- Behaviors -->
+  <plone:behavior
+        title="Kita Zug Facility Fields"
+        description="Additional Fields for the Daycare Centers for the Canton of Zug"
+        provides=".item.IKitaZugFields"
+  />
+
+  <!-- Resources -->
+  <browser:resourceDirectory name="izug.seantis.reservation.js" directory="js"/>
 
 </configure>

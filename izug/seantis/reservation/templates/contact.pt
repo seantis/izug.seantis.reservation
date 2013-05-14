@@ -1,0 +1,13 @@
+<div xmlns:tal="http://xml.zope.org/namespaces/tal"
+     xmlns:i18n="http://xml.zope.org/namespaces/i18n" 
+     i18n:domain="seantis.dir.kitazug">
+    
+    <div class="kitazug-contact">
+        <h2 i18n:translate="">Contact</h2>
+        <div tal:content="python: ' '.join(
+            [i for i in (viewlet.data['contact_first_name'], viewlet.data['contact_last_name']) if i]
+        )"></div>
+        <div tal:content="viewlet/data/contact_phone"></div>
+        <a tal:attributes="href string: mailto:${viewlet/data/contact_email}" tal:content="viewlet/data/contact_email"></a>
+    </div>
+</div>
