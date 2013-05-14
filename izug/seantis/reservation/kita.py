@@ -290,6 +290,8 @@ class KitaZugExport(grok.Subscription):
 
     def export(self, request):
 
+        import pdb; pdb.set_trace()
+
         fields = [
             ('title', _(u'Name')),
             ('affix', _(u'Name affix')),

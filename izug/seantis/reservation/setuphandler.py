@@ -1,6 +1,7 @@
 from decimal import Decimal
 from zope.component import getUtility
 from plone.registry.interfaces import IRegistry
+from plone.dexterity.interfaces import IDexterityFTI
 from collective.geo.settings.interfaces import IGeoSettings
 
 
@@ -36,7 +37,25 @@ def setup_geo(site):
     geo_settings.zoom = Decimal("11")
 
 
+def setup_kita(site):
+
+    # add the kita fields to the facility item
+    fti = getUtility(IDexterityFTI, name='seantis.dir.facility.item')
+
+    behavior = 'izug.seantis.reservation.kita.IKitaZugFields'
+    behaviors = list(fti.behaviors)
+
+    if behavior not in behaviors:
+        behaviors.append(behavior)
+        fti.behaviors = behaviors
+
+
 def custom_setup(context):
 
     if 'izug/seantis' in context._profile_path:
-        setup_geo(context.getSite())
+
+        if context._profile_path.endswith('profiles/default'):
+            setup_geo(context.getSite())
+
+        if context._profile_path.endswith('profiles/kita'):
+            setup_kita(context.getSite())

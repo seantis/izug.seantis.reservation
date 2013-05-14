@@ -16,7 +16,7 @@
   <!-- Profiles -->
   <genericsetup:registerProfile
       name="default"
-      title="izug.seantis.reservation"
+      title="iZug Seantis Reservation"
       directory="profiles/default"
       description="iZug adjustments for seantis.reservation"
       provides="Products.GenericSetup.interfaces.EXTENSION"
@@ -24,7 +24,7 @@
 
   <genericsetup:registerProfile
       name="kita"
-      title="izug.seantis.reservation"
+      title="iZug Seantis Reservation - Kita"
       directory="profiles/kita"
       description="Kita Zug adjustments for seantis.reservation"
       provides="Products.GenericSetup.interfaces.EXTENSION"
@@ -51,7 +51,7 @@
   <plone:behavior
         title="Kita Zug Facility Fields"
         description="Additional Fields for the Daycare Centers for the Canton of Zug"
-        provides=".item.IKitaZugFields"
+        provides=".kita.IKitaZugFields"
   />
 
   <!-- Resources -->
