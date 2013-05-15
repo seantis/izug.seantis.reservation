@@ -36,7 +36,7 @@ def load_xls(xls_path):
         record['notes'] = strcol(2)
         record['spots'] = intcol(3)
         record['address'] = strcol(4)
-        record['zipcode'] = intcol(5)
+        record['zipcode'] = strcol(5)
         record['city'] = strcol(6)
         record['phone'] = strcol(7)
         record['email'] = strcol(8)
@@ -59,7 +59,7 @@ def load_xls(xls_path):
             'first_name': strcol(22),
             'last_name': strcol(23),
             'address': strcol(24),
-            'zipcode': intcol(25),
+            'zipcode': strcol(25),
             'city': strcol(26)
         }
         record['lat'] = strcol(27)
@@ -111,7 +111,7 @@ def run_import(app, site_name, folder_path, records):
         map(suggested_values['cat4'].add, utils.flatten(facility.cat4))
 
         facility.affix = record['affix']
-        facility.spots = int(record['spots'])
+        facility.spots = record['spots']
         facility.address = record['address']
         facility.zipcode = record['zipcode']
         facility.city = record['city']
@@ -137,7 +137,7 @@ def run_import(app, site_name, folder_path, records):
         facility.correspondence_zipcode = record['correspondence'][
             'zipcode'
         ]
-        facility.correspondence_city = record['correspondence'][
+        facility.correspondence_town = record['correspondence'][
             'city'
         ]
         facility.notes = record['notes']

@@ -293,7 +293,7 @@ class KitaZugExport(grok.Subscription):
         fields = [
             ('title', _(u'Name')),
             ('affix', _(u'Name affix')),
-            ('description', _(u'Description')),
+            ('notes', _(u'Description')),
             ('spots', _(u'Total number of places')),
             ('address', _(u'Address')),
             ('zipcode', _(u'Zipcode')),
@@ -332,6 +332,8 @@ class KitaZugExport(grok.Subscription):
         listwrap = lambda val: ','.join(val)
         for cat in CATEGORIES:
             fieldmap.bind_wrapper(cat, listwrap)
+
+        fieldmap.bind_wrapper('spots', str)
 
         xlsfile = StringIO()
 
