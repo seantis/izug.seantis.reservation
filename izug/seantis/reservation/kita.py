@@ -18,9 +18,7 @@ from seantis.dir.base.utils import get_current_language
 from seantis.dir.base.const import CATEGORIES
 from seantis.dir.facility.item import (
     ItemDetailViewletManager,
-    IFacilityDirectory,
-    IFacilityDirectoryItem,
-    IFacilityDirectoryItemTitle
+    IFacilityDirectory
 )
 from izug.seantis.reservation import _
 
@@ -186,18 +184,6 @@ class IKitaZugFields(Interface):
     )
 
 alsoProvides(IKitaZugFields, IFormFieldProvider)
-
-
-class FacilityDirectoryItemTitleAdapter(grok.Adapter):
-
-    grok.context(IFacilityDirectoryItem)
-    grok.provides(IFacilityDirectoryItemTitle)
-
-    def get_title(self):
-        if hasattr(self.context, 'affix') and self.context.affix:
-            return ' - '.join((self.context.title, self.context.affix))
-        else:
-            return self.context.title
 
 
 class Viewlet(grok.Viewlet):
