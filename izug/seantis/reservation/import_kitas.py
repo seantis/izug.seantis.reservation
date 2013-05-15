@@ -6,6 +6,8 @@ from plone.dexterity.utils import createContentInContainer
 from Testing.makerequest import makerequest
 from zope.component.hooks import setSite
 
+from seantis.dir.base import utils
+
 
 def number_cell(cell):
     if cell.ctype in (xlrd.XL_CELL_EMPTY, xlrd.XL_CELL_BLANK):
@@ -31,7 +33,7 @@ def load_xls(xls_path):
         record = {}
         record['name'] = strcol(0)
         record['affix'] = strcol(1)
-        record['description'] = strcol(2)
+        record['notes'] = strcol(2)
         record['spots'] = intcol(3)
         record['address'] = strcol(4)
         record['zipcode'] = intcol(5)
@@ -60,6 +62,8 @@ def load_xls(xls_path):
             'zipcode': intcol(25),
             'city': strcol(26)
         }
+        record['lat'] = strcol(27)
+        record['lon'] = strcol(28)
         records.append(record)
 
     return records
@@ -78,18 +82,20 @@ def run_import(app, site_name, folder_path, records):
     setSite(site)
 
     folder = site.unrestrictedTraverse(folder_path)
-    assert folder.portal_type == 'seantis.dir.base.directory'
+    assert folder.portal_type == 'seantis.dir.facility.directory'
 
     # clear folder
     for id in folder.contentIds():
         del folder[id]
 
+    suggested_values = dict(cat1=set(), cat2=set(), cat3=set(), cat4=set())
+
     for record in records:
         facility = createContentInContainer(
             folder,
-            'seantis.dir.base.item',
+            'seantis.dir.facility.item',
             title=record['name'],
-            description=record['description']
+            description=''
         )
 
         facility.opening_hours = record['opening_hours']
@@ -98,6 +104,11 @@ def run_import(app, site_name, folder_path, records):
         facility.cat2 = [record['location']]
         facility.cat3 = record['subsidized'] and [u'Ja'] or [u'Nein']
         facility.cat4 = record['languages']
+
+        map(suggested_values['cat1'].add, utils.flatten(facility.cat1))
+        map(suggested_values['cat2'].add, utils.flatten(facility.cat2))
+        map(suggested_values['cat3'].add, utils.flatten(facility.cat3))
+        map(suggested_values['cat4'].add, utils.flatten(facility.cat4))
 
         facility.affix = record['affix']
         facility.spots = int(record['spots'])
@@ -129,11 +140,22 @@ def run_import(app, site_name, folder_path, records):
         facility.correspondence_city = record['correspondence'][
             'city'
         ]
+        facility.notes = record['notes']
+
+        if record['lon'] and record['lat']:
+            facility.set_coordinates('Point', map(
+                float, (record['lon'], record['lat'])
+            ))
+
         facility.image = None
-        facility.notes = ''
         facility.contact = ''
         facility.infrastructure = ''
         facility.terms_of_use = ''
+
+    folder.cat1_suggestions = sorted(list(suggested_values['cat1']))
+    folder.cat2_suggestions = sorted(list(suggested_values['cat2']))
+    folder.cat3_suggestions = sorted(list(suggested_values['cat3']))
+    folder.cat4_suggestions = sorted(list(suggested_values['cat4']))
 
     transaction.commit()
 
@@ -144,9 +166,10 @@ def run_import(app, site_name, folder_path, records):
 if "app" in locals():
 
     import sys
-    site_name = sys.argv[1]
-    folder = sys.argv[2]
-    xls = sys.argv[3]
+
+    site_name = sys.argv[-3]
+    folder = sys.argv[-2]
+    xls = sys.argv[-1]
 
     records = load_xls(xls)
 
