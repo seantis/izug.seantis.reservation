@@ -1,9 +1,0 @@
-<div xmlns:tal="http://xml.zope.org/namespaces/tal" xmlns:i18n="http://xml.zope.org/namespaces/i18n" i18n:domain="izug.seantis.reservation" id="landingPageIntro">
-    <div id="landingPageText" tal:condition="python: context.subtitle or context.description or context.image">
-      <div id="landingPageImage" tal:condition="context/image">
-        <img tal:replace="structure context/@@images/image/thumb" />
-      </div>
-      <h2 tal:content="context/subtitle" />
-      <div tal:content="structure context/html_description" />
-    </div>
-</div>
