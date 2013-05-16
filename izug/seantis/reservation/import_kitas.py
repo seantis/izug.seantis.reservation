@@ -152,6 +152,8 @@ def run_import(app, site_name, folder_path, records):
         facility.infrastructure = ''
         facility.terms_of_use = ''
 
+        facility.reindexObject()
+
     folder.cat1_suggestions = sorted(list(suggested_values['cat1']))
     folder.cat2_suggestions = sorted(list(suggested_values['cat2']))
     folder.cat3_suggestions = sorted(list(suggested_values['cat3']))
