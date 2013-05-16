@@ -13,9 +13,8 @@ from collective.dexteritytextindexer import searchable
 from seantis.dir.base.interfaces import IExportProvider
 from seantis.dir.base.schemafields import Email, AutoProtocolURI
 from seantis.dir.base.xlsexport import xls_response, export_xls
-from seantis.dir.base.fieldmap import FieldMap
+from seantis.dir.base.fieldmap import FieldMap, add_category_binds
 from seantis.dir.base.utils import get_current_language
-from seantis.dir.base.const import CATEGORIES
 from seantis.dir.facility.item import (
     ItemDetailViewletManager,
     IFacilityDirectory
@@ -329,9 +328,7 @@ class KitaZugExport(grok.Subscription):
         for field, title in fields:
             fieldmap.add_title(field, title)
 
-        listwrap = lambda val: ','.join(val)
-        for cat in CATEGORIES:
-            fieldmap.bind_wrapper(cat, listwrap)
+        add_category_binds(fieldmap)
 
         fieldmap.bind_wrapper('spots', str)
 
