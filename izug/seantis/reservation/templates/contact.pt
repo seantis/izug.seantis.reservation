@@ -1,6 +1,6 @@
 <div xmlns:tal="http://xml.zope.org/namespaces/tal"
      xmlns:i18n="http://xml.zope.org/namespaces/i18n" 
-     i18n:domain="seantis.dir.kitazug">
+     i18n:domain="izug.seantis.reservation">
     
     <div class="kitazug-contact">
         <h2 i18n:translate="">Contact</h2>

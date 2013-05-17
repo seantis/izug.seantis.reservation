@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2013-05-15 09:38+0000\n"
+"POT-Creation-Date: 2013-05-17 07:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,179 +14,191 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: izug.seantis.reservation\n"
 
-#: ./kita.py:45
+#: ./kita.py:44
+#: ./templates/address.pt:6
 msgid "Address"
 msgstr "Adresse"
 
-#: ./kita.py:87
+#: ./kita.py:86
+#: ./templates/info.pt:9
 msgid "Age"
 msgstr "Alter"
 
-#: ./kita.py:165
+#: ./kita.py:164
+#: ./templates/contact.pt:6
 msgid "Contact"
 msgstr "Kontakt"
 
-#: ./kita.py:117
+#: ./kita.py:116
 msgid "Contact Email"
 msgstr "Kontakt Email"
 
-#: ./kita.py:99
+#: ./kita.py:98
 msgid "Contact First Name"
 msgstr "Kontakt Vorname"
 
-#: ./kita.py:105
+#: ./kita.py:104
 msgid "Contact Last Name"
 msgstr "Kontakt Nachname"
 
-#: ./kita.py:111
+#: ./kita.py:110
 msgid "Contact Phone"
 msgstr "Kontakt Telefon"
 
-#: ./kita.py:315
+#: ./kita.py:314
 msgid "Contact email"
 msgstr "Kontakt Email"
 
-#: ./kita.py:312
+#: ./kita.py:311
 msgid "Contact first name"
 msgstr "Kontakt Vorname"
 
-#: ./kita.py:313
+#: ./kita.py:312
 msgid "Contact last name"
 msgstr "Kontakt Nachname"
 
-#: ./kita.py:314
+#: ./kita.py:313
 msgid "Contact phone"
 msgstr "Kontakt Telefon"
 
-#: ./kita.py:176
+#: ./kita.py:175
 msgid "Correspondence"
 msgstr "Korrespondenz"
 
-#: ./kita.py:141
+#: ./kita.py:140
 msgid "Correspondence Address"
 msgstr "Korrespondenz Adresse"
 
-#: ./kita.py:123
+#: ./kita.py:122
 msgid "Correspondence First Name"
 msgstr "Korrespondenz Vorname"
 
-#: ./kita.py:135
+#: ./kita.py:134
 msgid "Correspondence Last Name"
 msgstr "Korrespondenz Nachname"
 
-#: ./kita.py:147
+#: ./kita.py:146
 msgid "Correspondence Zipcode"
 msgstr "Korrespondenz PLZ"
 
-#: ./kita.py:318
+#: ./kita.py:317
 msgid "Correspondence address"
 msgstr "Korrespondenz Adresse"
 
-#: ./kita.py:153
+#: ./kita.py:152
 msgid "Correspondence city"
 msgstr "Korrespondenz Stadt"
 
-#: ./kita.py:316
+#: ./kita.py:315
 msgid "Correspondence first name"
 msgstr "Korrespondenz Vorname"
 
-#: ./kita.py:317
+#: ./kita.py:316
 msgid "Correspondence last name"
 msgstr "Korrespondenz Nachname"
 
-#: ./kita.py:320
+#: ./kita.py:319
 msgid "Correspondence town"
 msgstr "Korrespondenz Ort"
 
-#: ./kita.py:319
+#: ./kita.py:318
 msgid "Correspondence zipcode"
 msgstr "Korrespondez PLZ"
 
-#: ./kita.py:285
+#: ./kita.py:284
 msgid "Custom export of the daycare centers in the canton of Zug"
 msgstr "Export für Familienergänzende Kinderbetreuung Zug"
 
-#: ./kita.py:296
+#: ./kita.py:295
 msgid "Description"
 msgstr "Beschreibung"
 
-#: ./kita.py:69
+#: ./kita.py:68
 msgid "Email"
 msgstr "Email"
 
-#: ./kita.py:159
+#: ./kita.py:158
 msgid "Facility Information"
 msgstr "Standort Information"
 
-#: ./kita.py:81
+#: ./kita.py:80
 msgid "Fax"
 msgstr "Fax"
 
-#: ./kita.py:93
+#: ./kita.py:92
+#: ./templates/info.pt:21
 msgid "Holidays"
 msgstr "Ferien"
 
-#: ./kita.py:75
+#: ./kita.py:74
 msgid "Homepage"
 msgstr "Homepage"
 
-#: ./kita.py:306
+#: ./templates/info.pt:6
+msgid "Info"
+msgstr "Information"
+
+#: ./kita.py:305
 msgid "Kita Location"
 msgstr "Kita Ort"
 
-#: ./kita.py:283
+#: ./kita.py:282
 msgid "Kita Zug Export"
 msgstr "Kita Export Zug"
 
-#: ./kita.py:308
+#: ./kita.py:307
 msgid "Language"
 msgstr "Sprache"
 
-#: ./kita.py:300
+#: ./kita.py:299
 msgid "Location"
 msgstr "Ort"
 
-#: ./kita.py:294
+#: ./kita.py:293
 msgid "Name"
 msgstr "Name"
 
-#: ./kita.py:34
+#: ./kita.py:33
 msgid "Name Affix"
 msgstr "Namenszusatz"
 
-#: ./kita.py:295
+#: ./kita.py:294
 msgid "Name affix"
 msgstr "Namenszusatz"
 
-#: ./kita.py:39
+#: ./kita.py:38
 msgid "Number of Daycare Spots"
 msgstr "Anzahl Plätze"
 
-#: ./kita.py:311
+#: ./kita.py:310
 msgid "Opening Hours"
 msgstr "Öffnungszeiten"
 
-#: ./kita.py:63
+#: ./kita.py:62
 msgid "Phone"
 msgstr "Telefon"
 
-#: ./kita.py:309
+#: ./templates/info.pt:15
+msgid "Spots"
+msgstr "Anzahl Plätze"
+
+#: ./kita.py:308
 msgid "Subsidized"
 msgstr "Subventioniert"
 
-#: ./kita.py:297
+#: ./kita.py:296
 msgid "Total number of places"
 msgstr "Anzahl Plätze"
 
-#: ./kita.py:57
+#: ./kita.py:56
 msgid "Town"
 msgstr "Ort"
 
-#: ./kita.py:305
+#: ./kita.py:304
 msgid "Type"
 msgstr "Art"
 
-#: ./kita.py:51
+#: ./kita.py:50
 msgid "Zipcode"
 msgstr "PLZ"
 
