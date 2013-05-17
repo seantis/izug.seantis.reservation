@@ -37,13 +37,13 @@ def load_xls(xls_path):
         record['spots'] = intcol(3)
         record['address'] = strcol(4)
         record['zipcode'] = strcol(5)
-        record['city'] = strcol(6)
+        record['location'] = strcol(6)
         record['phone'] = strcol(7)
         record['email'] = strcol(8)
         record['url'] = strcol(9)
         record['fax'] = strcol(10)
         record['types'] = [s.strip() for s in strcol(11).split(',')]
-        record['location'] = strcol(12)
+        record['kita_location'] = strcol(12)
         record['age'] = strcol(13)
         record['languages'] = [s.strip() for s in strcol(14).split(',')]
         record['subsidized'] = not('Nicht' in strcol(15))
@@ -101,7 +101,7 @@ def run_import(app, site_name, folder_path, records):
         facility.opening_hours = record['opening_hours']
 
         facility.cat1 = record['types']
-        facility.cat2 = [record['location']]
+        facility.cat2 = [record['kita_location']]
         facility.cat3 = record['subsidized'] and [u'Ja'] or [u'Nein']
         facility.cat4 = record['languages']
 
@@ -114,7 +114,7 @@ def run_import(app, site_name, folder_path, records):
         facility.spots = record['spots']
         facility.address = record['address']
         facility.zipcode = record['zipcode']
-        facility.city = record['city']
+        facility.location = record['location']
         facility.phone = record['phone']
         facility.email = record['email']
         facility.url = record['url']

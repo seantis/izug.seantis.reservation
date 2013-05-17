@@ -302,7 +302,7 @@ class KitaZugExport(grok.Subscription):
             ('homepage', _(u'Homepage')),
             ('fax', _(u'Fax')),
             ('cat1', _(u'Type')),
-            ('cat2', _(u'Kita Location')),
+            ('cat2', _(u'Location (Daycare Center)')),
             ('age', _(u'Age')),
             ('cat4', _(u'Language')),
             ('cat3', _(u'Subsidized')),
@@ -316,7 +316,9 @@ class KitaZugExport(grok.Subscription):
             ('correspondence_last_name', _(u'Correspondence last name')),
             ('correspondence_address', _(u'Correspondence address')),
             ('correspondence_zipcode', _(u'Correspondence zipcode')),
-            ('correspondence_town', _(u'Correspondence town'))
+            ('correspondence_town', _(u'Correspondence town')),
+            ('latitude', _(u'Latitude')),
+            ('longitude', _(u'Longitude'))
         ]
 
         fieldmap = FieldMap()
@@ -331,6 +333,8 @@ class KitaZugExport(grok.Subscription):
         add_category_binds(fieldmap)
 
         fieldmap.bind_wrapper('spots', str)
+        fieldmap.bind_wrapper('latitude', str)
+        fieldmap.bind_wrapper('longitude', str)
 
         xlsfile = StringIO()
 
