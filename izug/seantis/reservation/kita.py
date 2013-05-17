@@ -332,9 +332,11 @@ class KitaZugExport(grok.Subscription):
 
         add_category_binds(fieldmap)
 
-        fieldmap.bind_wrapper('spots', str)
-        fieldmap.bind_wrapper('latitude', str)
-        fieldmap.bind_wrapper('longitude', str)
+        to_str = lambda o: str(o) if o is not None else ''
+
+        fieldmap.bind_wrapper('spots', to_str)
+        fieldmap.bind_wrapper('latitude', to_str)
+        fieldmap.bind_wrapper('longitude', to_str)
 
         xlsfile = StringIO()
 
