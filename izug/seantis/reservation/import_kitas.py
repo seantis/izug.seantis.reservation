@@ -60,7 +60,7 @@ def load_xls(xls_path):
             'last_name': strcol(23),
             'address': strcol(24),
             'zipcode': strcol(25),
-            'city': strcol(26)
+            'town': strcol(26)
         }
         record['lat'] = strcol(27)
         record['lon'] = strcol(28)
@@ -138,7 +138,7 @@ def run_import(app, site_name, folder_path, records):
             'zipcode'
         ]
         facility.correspondence_town = record['correspondence'][
-            'city'
+            'town'
         ]
         facility.notes = record['notes']
 

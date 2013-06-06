@@ -147,9 +147,9 @@ class IKitaZugFields(Interface):
         required=False
     )
 
-    searchable('correspondence_city')
-    correspondence_city = TextLine(
-        title=_(u'Correspondence city'),
+    searchable('correspondence_town')
+    correspondence_town = TextLine(
+        title=_(u'Correspondence town'),
         required=False
     )
 
@@ -178,7 +178,7 @@ class IKitaZugFields(Interface):
             'correspondence_last_name',
             'correspondence_address',
             'correspondence_zipcode',
-            'correspondence_city'
+            'correspondence_town'
         ]
     )
 
