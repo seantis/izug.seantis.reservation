@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2013-05-17 07:56+0000\n"
+"POT-Creation-Date: 2013-06-06 15:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -88,10 +88,6 @@ msgstr ""
 msgid "Correspondence address"
 msgstr ""
 
-#: ./kita.py:152
-msgid "Correspondence city"
-msgstr ""
-
 #: ./kita.py:315
 msgid "Correspondence first name"
 msgstr ""
@@ -100,7 +96,7 @@ msgstr ""
 msgid "Correspondence last name"
 msgstr ""
 
-#: ./kita.py:319
+#: ./kita.py:152
 msgid "Correspondence town"
 msgstr ""
 
@@ -110,6 +106,10 @@ msgstr ""
 
 #: ./kita.py:284
 msgid "Custom export of the daycare centers in the canton of Zug"
+msgstr ""
+
+#: ./kita.py:364
+msgid "Custom export of the daycare centers in the canton of Zug for distribution"
 msgstr ""
 
 #: ./kita.py:295
@@ -139,6 +139,10 @@ msgstr ""
 
 #: ./templates/info.pt:6
 msgid "Info"
+msgstr ""
+
+#: ./kita.py:362
+msgid "Kita Zug Distribution"
 msgstr ""
 
 #: ./kita.py:282

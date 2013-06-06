@@ -349,3 +349,61 @@ class KitaZugExport(grok.Subscription):
         )
 
         return xls_response(request, 'kitas_export.xls', xlsfile)
+
+
+class KitaZugDistribution(grok.Subscription):
+
+    grok.context(IFacilityDirectory)
+    grok.provides(IExportProvider)
+
+    layer = IKitaSpecific
+
+    id = 'kita-zug-distribution'
+    title = _(u'Kita Zug Distribution')
+
+    description = _(
+        u'Custom export of the daycare centers in the canton of Zug '
+        u'for distribution'
+    )
+
+    url = None
+
+    def export(self, request):
+
+        fields = [
+            ('title', _(u'Name')),
+            ('address', _(u'Address')),
+            ('zipcode', _(u'Zipcode')),
+            ('location', _(u'Location')),
+            ('email', _(u'Email')),
+            ('cat1', _(u'Type')),
+            ('cat2', _(u'Location (Daycare Center)')),
+            ('correspondence_first_name', _(u'Correspondence first name')),
+            ('correspondence_last_name', _(u'Correspondence last name')),
+            ('correspondence_address', _(u'Correspondence address')),
+            ('correspondence_zipcode', _(u'Correspondence zipcode')),
+            ('correspondence_town', _(u'Correspondence town')),
+        ]
+
+        fieldmap = FieldMap()
+        fieldmap.root = True
+        fieldmap.keyfields = ('title',)
+        fieldmap.typename = 'seantis.dir.facility.item'
+        fieldmap.add_fields(f[0] for f in fields)
+
+        for field, title in fields:
+            fieldmap.add_title(field, title)
+
+        add_category_binds(fieldmap)
+
+        xlsfile = StringIO()
+
+        export_xls(
+            directory=self.context,
+            filehandle=xlsfile,
+            language=get_current_language(self.context, request),
+            as_template=False,
+            fieldmap=fieldmap
+        )
+
+        return xls_response(request, 'kitas_export_versand.xls', xlsfile)

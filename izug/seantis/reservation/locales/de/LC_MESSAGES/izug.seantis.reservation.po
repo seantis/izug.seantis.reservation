@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2013-05-17 07:56+0000\n"
+"POT-Creation-Date: 2013-06-06 15:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -85,10 +85,6 @@ msgstr "Korrespondenz PLZ"
 msgid "Correspondence address"
 msgstr "Korrespondenz Adresse"
 
-#: ./kita.py:152
-msgid "Correspondence city"
-msgstr "Korrespondenz Stadt"
-
 #: ./kita.py:315
 msgid "Correspondence first name"
 msgstr "Korrespondenz Vorname"
@@ -97,7 +93,7 @@ msgstr "Korrespondenz Vorname"
 msgid "Correspondence last name"
 msgstr "Korrespondenz Nachname"
 
-#: ./kita.py:319
+#: ./kita.py:152
 msgid "Correspondence town"
 msgstr "Korrespondenz Ort"
 
@@ -108,6 +104,10 @@ msgstr "Korrespondez PLZ"
 #: ./kita.py:284
 msgid "Custom export of the daycare centers in the canton of Zug"
 msgstr "Export für Familienergänzende Kinderbetreuung Zug"
+
+#: ./kita.py:364
+msgid "Custom export of the daycare centers in the canton of Zug for distribution"
+msgstr "Versand-Export für Familienergänzende Kinderbetreuung Zug"
 
 #: ./kita.py:295
 msgid "Description"
@@ -137,6 +137,10 @@ msgstr "Homepage"
 #: ./templates/info.pt:6
 msgid "Info"
 msgstr "Information"
+
+#: ./kita.py:362
+msgid "Kita Zug Distribution"
+msgstr "Kita Zug Versand"
 
 #: ./kita.py:282
 msgid "Kita Zug Export"
