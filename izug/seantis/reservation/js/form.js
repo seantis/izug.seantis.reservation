@@ -10,7 +10,6 @@
             $('#formfield-form-widgets-infrastructure').hide();
             $('#formfield-form-widgets-terms_of_use').hide();
             $('#formfield-form-widgets-description').hide();
-            $('#formfield-form-widgets-image').hide();
         }
     });
 })(jQuery);
