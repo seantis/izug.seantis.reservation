@@ -69,8 +69,8 @@ class IKitaZugFields(Interface):
         required=False
     )
 
-    searchable('homepage')
-    homepage = AutoProtocolURI(
+    searchable('url')
+    url = AutoProtocolURI(
         title=_(u'Homepage'),
         required=False
     )
@@ -247,7 +247,7 @@ class KitaAddressViewlet(Viewlet):
             'phone',
             'fax',
             'email',
-            'homepage'
+            'url'
         ])
 
 
@@ -299,7 +299,7 @@ class KitaZugExport(grok.Subscription):
             ('location', _(u'Location')),
             ('phone', _(u'Phone')),
             ('email', _(u'Email')),
-            ('homepage', _(u'Homepage')),
+            ('url', _(u'Homepage')),
             ('fax', _(u'Fax')),
             ('cat1', _(u'Type')),
             ('cat2', _(u'Location (Daycare Center)')),

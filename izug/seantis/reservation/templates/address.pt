@@ -10,7 +10,11 @@
             <span tal:content="viewlet/data/location"></span>
         </div>
         <div tal:content="python: ' / '.join([i for i in (viewlet.data['phone'], viewlet.data['fax']) if i])"></div>
-        <a tal:attributes="href string: mailto:${viewlet/data/email}" tal:content="viewlet/data/email"></a>
-        <a tal:attributes="href viewlet/data/homepage" tal:content="viewlet/data/homepage"></a>
+        <div>
+            <a tal:attributes="href string: mailto:${viewlet/data/email}" tal:content="viewlet/data/email"></a>
+        </div>
+        <div class="link-external">
+            <a tal:attributes="href viewlet/data/url" target="_blank" tal:content="viewlet/data/url"></a>
+        </div>
     </div>
 </div>
