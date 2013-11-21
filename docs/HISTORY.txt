@@ -1,6 +1,11 @@
 Changelog
 =========
 
+0.3 (unreleased)
+---
+
+- First PyPI Release
+
 0.2
 ---
 - Requires Plone 4.1+
