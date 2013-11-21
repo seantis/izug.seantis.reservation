@@ -1,6 +1,11 @@
 Changelog
 =========
 
+0.4
+---
+
+- Fixes missing README.md
+
 0.3
 ---
 

@@ -1,6 +1,7 @@
 recursive-include izug *
 recursive-include docs *
 include *.txt
+include *.md
 include *.rst
 global-exclude *.mo
 global-exclude *.pyc
