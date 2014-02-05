@@ -10,8 +10,9 @@ from plone.autoform.interfaces import IFormFieldProvider
 
 from collective.dexteritytextindexer import searchable
 
+from seantis.plonetools.schemafields import Email, Website
+
 from seantis.dir.base.interfaces import IExportProvider
-from seantis.dir.base.schemafields import Email, AutoProtocolURI
 from seantis.dir.base.xlsexport import xls_response, export_xls
 from seantis.dir.base.fieldmap import FieldMap, add_category_binds
 from seantis.dir.base.utils import get_current_language
@@ -70,7 +71,7 @@ class IKitaZugFields(Interface):
     )
 
     searchable('url')
-    url = AutoProtocolURI(
+    url = Website(
         title=_(u'Homepage'),
         required=False
     )

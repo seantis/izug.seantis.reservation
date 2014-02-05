@@ -1,6 +1,12 @@
 Changelog
 =========
 
+0.5 (unreleased)
+----------------
+
+- Adds seantis.plonetools integration.
+  [href]
+
 0.4
 ---
 
