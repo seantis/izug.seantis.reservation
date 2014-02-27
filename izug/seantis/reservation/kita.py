@@ -4,9 +4,11 @@ from five import grok
 
 from zope.schema import Int, TextLine
 from zope.interface import Interface, alsoProvides
+from zope.component.hooks import getSite
 
 from plone.directives import form
 from plone.autoform.interfaces import IFormFieldProvider
+from Products.CMFCore.utils import getToolByName
 
 from collective.dexteritytextindexer import searchable
 
@@ -252,6 +254,15 @@ class KitaAddressViewlet(Viewlet):
         ])
 
 
+def extract_text_from_html(text):
+    if not text:
+        return u''
+
+    transforms = getToolByName(getSite(), 'portal_transforms')
+    stream = transforms.convertTo('text/plain', text, mimetype='text/html')
+    return stream.getData().strip()
+
+
 class KitaContactViewlet(Viewlet):
     grok.context(Interface)
     grok.name('seantis.dir.kitazug.detail.contact')
@@ -338,6 +349,7 @@ class KitaZugExport(grok.Subscription):
         fieldmap.bind_wrapper('spots', to_str)
         fieldmap.bind_wrapper('latitude', to_str)
         fieldmap.bind_wrapper('longitude', to_str)
+        fieldmap.bind_wrapper('notes', extract_text_from_html)
 
         xlsfile = StringIO()
 
