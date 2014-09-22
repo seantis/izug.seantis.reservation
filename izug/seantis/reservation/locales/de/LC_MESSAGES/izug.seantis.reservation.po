@@ -31,7 +31,7 @@ msgstr "Kontakt"
 
 #: ./kita.py:116
 msgid "Contact Email"
-msgstr "Kontakt Email"
+msgstr "Kontakt E-Mail"
 
 #: ./kita.py:98
 msgid "Contact First Name"
@@ -47,7 +47,7 @@ msgstr "Kontakt Telefon"
 
 #: ./kita.py:314
 msgid "Contact email"
-msgstr "Kontakt Email"
+msgstr "Kontakt E-Mail"
 
 #: ./kita.py:311
 msgid "Contact first name"
@@ -115,7 +115,7 @@ msgstr "Beschreibung"
 
 #: ./kita.py:68
 msgid "Email"
-msgstr "Email"
+msgstr "E-Mail"
 
 #: ./kita.py:158
 msgid "Facility Information"
