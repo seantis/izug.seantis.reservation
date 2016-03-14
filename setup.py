@@ -27,6 +27,7 @@ setup(name='izug.seantis.reservation',
       install_requires=[
           'Plone>=4.1'
           'setuptools',
+          'seantis.dir.base>=1.10',
           'seantis.reservation',
           'izug.basetheme',
           'collective.geo.zugmap'

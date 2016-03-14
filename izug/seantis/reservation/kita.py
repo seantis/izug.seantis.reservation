@@ -14,11 +14,15 @@ from collective.dexteritytextindexer import searchable
 
 from seantis.plonetools.schemafields import Email, Website
 
-from seantis.dir.base.interfaces import IExportProvider
+from seantis.dir.base.interfaces import (
+    IExportProvider,
+    IKmlExtendedDataProvider
+)
 from seantis.dir.base.xlsexport import xls_response, export_xls
 from seantis.dir.base.fieldmap import FieldMap, add_category_binds
 from seantis.dir.base.utils import get_current_language
 from seantis.dir.facility.item import (
+    IFacilityDirectoryItem,
     ItemDetailViewletManager,
     IFacilityDirectory
 )
@@ -420,3 +424,33 @@ class KitaZugDistribution(grok.Subscription):
         )
 
         return xls_response(request, 'kitas_export_versand.xls', xlsfile)
+
+
+class KitaZugKmlExtendedDataProvider(grok.Adapter):
+    grok.context(IFacilityDirectoryItem)
+    grok.provides(IKmlExtendedDataProvider)
+
+    def extended_data(self):
+        """ Returns a list of tuples containing the name, the value and the
+        display name to be added as extended data for the KML document of
+        and directory item.
+
+        """
+        if not IKitaZugFields.providedBy(self.context):
+            return []
+
+        item = self.context
+        return [
+            ('GEMEINDE', item.location, _(u'Town')),
+            ('Name_Institution', item.title, _(u'Name')),
+            ('Zusatz', item.affix, _(u'Name affix')),
+            ('Alter_0', item.age, _(u'Age')),
+            ('Betreuungszeiten', item.opening_hours, _(u'Opening Hours')),
+            ('Ferien', item.holidays, _(u'Holidays')),
+            ('Strasse_Nummer', item.address, _(u'Address')),
+            ('Plz', item.zipcode, _(u'Zipcode')),
+            ('Email', item.email, _(u'Email')),
+            ('Homepage', item.url, _(u'Homepage')),
+            ('Telefon', item.phone, _(u'Phone')),
+            ('Fax', item.fax, _(u'Fax')),
+        ]

@@ -4,7 +4,8 @@ Changelog
 0.8 (unreleased)
 ----------------
 
-Nothing yet.
+- Adds an adapter to provide extended data to KML documents.
+  [msom]
 
 0.7 (2014-09-23)
 ----------------
