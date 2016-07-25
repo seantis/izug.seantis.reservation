@@ -28,6 +28,7 @@ setup(name='izug.seantis.reservation',
           'Plone>=4.1'
           'setuptools',
           'seantis.dir.base>=1.10',
+          'seantis.dir.facility',
           'seantis.reservation',
           'izug.basetheme',
           'collective.geo.zugmap'
